@@ -23,9 +23,10 @@
 
                 <strong>
                     {% if product.brand == 'unbranded' %}
-                        {{ product.brand }}
+                        <span class="badge rounded-pill bg-light text-dark">{{ product.brand }}</span>
+                        
                     {% else %}
-                        {{ product.brand }}™
+                        <span class="badge rounded-pill bg-dark">{{ product.brand }}™</span>
                     {% endif %}                    
                 </strong>
 

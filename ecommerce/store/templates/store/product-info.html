@@ -21,7 +21,13 @@
 
                 <h1 class="mb-0 h4"> {{ product.title }} </h1>
 
-                <strong> {{ product.brand }} </strong>
+                <strong>
+                    {% if product.brand == 'unbranded' %}
+                        {{ product.brand }}
+                    {% else %}
+                        {{ product.brand }}™
+                    {% endif %}                    
+                </strong>
 
 
                 <hr>

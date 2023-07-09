@@ -22,7 +22,7 @@ class Product(models.Model):
     brand = models.CharField(max_length=255, default='unbranded')
     description = models.TextField(blank=True)
     slug = models.SlugField(max_length=255)
-    price = models.DecimalField(max_digits=6, decimal_places=2)   
+    price = models.DecimalField(max_digits=7, decimal_places=2)   
     image = models.ImageField(upload_to='images/')     
     class Meta:
         verbose_name_plural = 'products'
